@@ -1,0 +1,10 @@
+[Unit]
+Description=Number Image Recognition
+After=syslog.target network.target auditd.service
+
+[Service]
+ExecStart=/opt/webapps/start_app.sh
+ExecStop=/opt/webapps/stop_app.sh
+
+[Install]
+WantedBy=multi-user.target
